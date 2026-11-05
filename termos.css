@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'ValorantFont';
+    src: url('../font/valorant.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    cursor: url('../img/cursor-val1.png') 0 0, auto !important;
+}
+
+a, button, .btn-voltar {
+    cursor: url('../img/cursor-val-hover1.png') 10 0, pointer !important;
+}
+
+body {
+    background-color: #0f1923;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ece8e1;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.container-termos {
+    background-color: rgba(15, 25, 35, 0.95);
+    border: 1px solid rgba(255, 70, 85, 0.3);
+    border-top: 4px solid #ff4655;
+    max-width: 800px;
+    width: 100%;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+
+.cabecalho-termos {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+.cabecalho-termos h1 {
+    font-family: 'ValorantFont', sans-serif;
+    color: #ff4655;
+    font-size: 26px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    color: #8b978f;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.subtitulo strong {
+    color: #ece8e1;
+}
+
+.corpo-termos {
+    max-height: 50vh;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+.corpo-termos::-webkit-scrollbar {
+    width: 6px;
+}
+
+.corpo-termos::-webkit-scrollbar-track {
+    background: #172430;
+}
+
+.corpo-termos::-webkit-scrollbar-thumb {
+    background: #ff4655;
+    border-radius: 2px;
+}
+
+.bloco-termo {
+    margin-bottom: 22px;
+    background-color: #172430;
+    padding: 16px 20px;
+    border-left: 3px solid #ff4655;
+    border-radius: 0 4px 4px 0;
+}
+
+.bloco-termo h2 {
+    font-family: 'ValorantFont', sans-serif;
+    color: #ece8e1;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.bloco-termo p, 
+.bloco-termo li {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #d1d5db;
+}
+
+.bloco-termo ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.bloco-termo li {
+    margin-bottom: 6px;
+}
+
+.rodape-termos {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-voltar {
+    display: inline-block;
+    font-family: 'ValorantFont', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #ff4655;
+    padding: 12px 28px;
+    text-decoration: none;
+    border: 1px solid #ff4655;
+    letter-spacing: 1px;
+    transition: all 0.2s ease;
+}
+
+.btn-voltar:hover {
+    background-color: #0f1923;
+    color: #ff4655;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 70, 85, 0.4);
+}

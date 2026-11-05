@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'ValorantFont';
+    src: url('../font/valorant.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    cursor: url('../img/cursor-val1.png') 0 0, auto !important;
+}
+
+a, 
+button, 
+input, 
+select, 
+textarea, 
+.btn-iniciar, 
+.btn-admin, 
+.logo-riot, 
+.card-projeto {
+    cursor: url('../img/cursor-val-hover1.png') 10 0, pointer !important;
+}
+
+body {
+    background-color: #0f1923;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#video-fundo-iframe {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: -1;
+    filter: brightness(0.6);
+    border: none;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #video-fundo-iframe { height: 56.25vw; }
+}
+@media (max-aspect-ratio: 16/9) {
+    #video-fundo-iframe { width: 177.78vh; }
+}
+
+.logo-riot {
+    position: fixed;
+    width: 110px;
+    height: auto;
+    filter: brightness(0) invert(1);
+    transition: transform 0.2s ease, filter 0.3s ease;
+    top: 25px;
+    left: 25px;
+    z-index: 10;
+}
+
+.logo-riot:hover {
+    transform: scale(1.05);
+    filter: invert(36%) sepia(88%) saturate(2283%) hue-rotate(331deg) brightness(101%) contrast(106%);
+}
+
+.hero {
+    text-align: center;
+    background-color: rgba(15, 25, 35, 0.85);
+    backdrop-filter: blur(8px);
+    padding: 45px 35px;
+    border-radius: 8px;
+    border-top: 4px solid #ff4655;
+    border-bottom: 1px solid rgba(255, 70, 85, 0.3);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8);
+    max-width: 520px;
+    width: 90%;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-family: 'ValorantFont', sans-serif;
+    color: #ff4655;
+    font-size: 30px;
+    margin-bottom: 18px;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    color: #ece8e1;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.botoes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.btn-iniciar,
+.btn-admin,
+.btn-usuario {
+    display: block;
+    width: 100%;
+    font-family: 'ValorantFont', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 14px 20px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    transition: all 0.2s ease;
+}
+
+.btn-iniciar {
+    background-color: #ff4655;
+    color: #ffffff;
+    border: 1px solid #ff4655;
+}
+
+.btn-iniciar:hover {
+    background-color: #0f1923;
+    color: #ff4655;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 70, 85, 0.4);
+}
+
+.btn-admin {
+    background-color: #ff4655;
+    color: #ffffff;
+    border: 1px solid #ff4655;
+}
+
+.btn-admin:hover {
+    background-color: #0f1923;
+    color: #ff4655;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 70, 85, 0.4);
+}
+.btn-usuario {
+    background-color: #ff4655;
+    color: #ffffff;
+    border: 1px solid #ff4655;
+}
+.btn-usuario:hover {
+    background-color: #0f1923;
+    color: #ff4655;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 70, 85, 0.4);
+}

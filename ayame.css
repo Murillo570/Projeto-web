@@ -1,0 +1,53 @@
+* {
+    cursor: url('../img/cursor-val1.png') 0 0, auto !important;
+}
+
+a,
+button,
+input,
+select,
+textarea,
+.btn-iniciar,
+.btn-admin,
+.logo-riot,
+.card-projeto,
+img {
+    cursor: url('../cursor-val-hover1.png') 10 0, pointer !important;
+}
+
+body {
+    background-color: #0f1923;
+
+}
+
+.imagem-projeto {
+    
+    width: 60%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 70, 85, 0.3);
+}
+
+.logo-riot {
+    position: fixed;
+    width: 110px;
+    height: auto;
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+    transition: transform 0.2s ease, filter 0.3s ease;
+    top: 25px;
+    left: 25px;
+    z-index: 10;
+}
+
+.logo-riot:hover {
+    transform: scale(1.05);
+    filter: invert(36%) sepia(88%) saturate(2283%) hue-rotate(331deg) brightness(101%) contrast(106%);
+}
+
+.box-imagem {
+    margin-top: 100px;
+    margin-left: 100px;
+}

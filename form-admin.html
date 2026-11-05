@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Admin - Valorant</title>
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+
+<body>
+    <img src="../img/fundo-val.jpg" alt="Fundo Valorant 1" class="fundo-val1">
+    <img src="../img/fundo-val2.jpg" alt="Fundo Valorant 2" class="fundo-val2">
+    <img src="../img/fundo-val3.jpg" alt="Fundo Valorant 3" class="fundo-val3">
+    <img src="../img/fundo-val4.jpg" alt="Fundo Valorant 4" class="fundo-val4">
+    <img src="../img/fundo-val5.jpg" alt="Fundo Valorant 5" class="fundo-val5">
+    <img src="../img/fundo-val6.webp" alt="Fundo Valorant 6" class="fundo-val6">
+
+    <a href="../index.html">
+        <img src="../img/Riot-logo.png" alt="Riot Games Logo" class="logo-riot">
+    </a>
+
+    <main class="form-container">
+        <form id="form-login" novalidate>
+            <h1>Acesso Restrito</h1>
+            <p class="subtitulo-admin">Painel de Avaliação de Projetos</p>
+
+            <div class="field-group">
+                <label for="usuario">Usuário / ID Riot</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Digite seu usuário administrativo" autocomplete="off">
+            </div>
+
+            <div class="field-group">
+                <label for="senha">Chave de Acesso</label>
+                <input type="password" id="senha" name="senha" placeholder="••••••••••••">
+            </div>
+
+            <div class="field-group">
+                <label for="codigo_seguranca">Código de Autenticação (2FA)</label>
+                <input type="text" id="codigo_seguranca" name="codigo_seguranca" placeholder="Ex: 849201" maxlength="6">
+            </div>
+
+            <input type="submit" id="enviar" value="Entrar no Painel">
+
+            <div class="link-voltar">
+                <a href="../index.html">← Voltar para a página inicial</a>
+            </div>
+        </form>
+    </main>
+
+    <script src="../Js/entrar-admin.js"></script>
+</body>
+
+</html>

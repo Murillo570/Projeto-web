@@ -1,0 +1,19 @@
+body {
+    background-color: #0f1923;
+
+}
+* {
+    cursor: url('../img/cursor-val1.png') 0 0, auto !important;
+}
+
+a, 
+button, 
+input, 
+select, 
+textarea, 
+.btn-iniciar, 
+.btn-admin, 
+.logo-riot, 
+.card-projeto {
+    cursor: url('../img/cursor-val-hover1.png') 10 0, pointer !important;
+}

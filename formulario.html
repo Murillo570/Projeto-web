@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Projeto - Valorant</title>
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+
+<body>
+    <img src="../img/fundo-val.jpg" alt="Fundo Valorant 1" class="fundo-val1">
+    <img src="../img/fundo-val2.jpg" alt="Fundo Valorant 2" class="fundo-val2">
+    <img src="../img/fundo-val3.jpg" alt="Fundo Valorant 3" class="fundo-val3">
+    <img src="../img/fundo-val4.jpg" alt="Fundo Valorant 4" class="fundo-val4">
+    <img src="../img/fundo-val5.jpg" alt="Fundo Valorant 5" class="fundo-val5">
+    <img src="../img/fundo-val6.webp" alt="Fundo Valorant 6" class="fundo-val6">
+
+    <a href="desc-projeto.html">
+        <img src="../img/Riot-logo.png" alt="Riot Games Logo" class="logo-riot">
+    </a>
+
+    <form action="">
+        <h1>Cadastro Projeto</h1>
+
+        <div class="field-group">
+            <label for="name">NOME / RAZÃO SOCIAL</label>
+            <input type="text" id="name" placeholder="Digite seu nome ou o da sua empresa" required>
+        </div>
+
+        <div class="field-group">
+            <label for="gmail">EMAIL DE CONTATO</label>
+            <input type="email" placeholder="exemplo@empresa.com" id="gmail" required>
+        </div>
+
+        <div class="field-group">
+            <label for="nome_projeto">NOME DO PROJETO</label>
+            <input type="text" id="nome_projeto" name="nome_projeto" placeholder="Ex: Agente Chrono / Novo Modo Capture"
+                required>
+        </div>
+
+        <div class="field-group">
+            <label for="tipo">TIPO DE PROPOSTA</label>
+            <select id="tipo" name="tipo" required>
+                <option value="" disabled selected>Selecione o tipo</option>
+                <option value="novo_agente">Novo Agente</option>
+                <option value="novo_mapa">Novo Mapa</option>
+                <option value="nova_arma">Nova Arma / Skin</option>
+                <option value="novo_modo">Novo Modo de Jogo</option>
+                <option value="balanceamento">Proposta de Balanceamento</option>
+            </select>
+        </div>
+
+        <div class="field-group" id="grupo-agente" style="display: none;">
+            <label for="select-agente">SELECIONE O AGENTE BASE</label>
+            <select id="select-agente" name="agente_base">
+                <option value="" disabled selected>Escolha o Agente</option>
+                <option value="Jett">Jett</option>
+                <option value="Reyna">Reyna</option>
+                <option value="Raze">Raze</option>
+                <option value="Sova">Sova</option>
+                <option value="Fade">Fade</option>
+                <option value="Brimstone">Brimstone</option>
+                <option value="Viper">Viper</option>
+                <option value="Cypher">Cypher</option>
+                <option value="Killjoy">Killjoy</option>
+            </select>
+        </div>
+
+        <div class="field-group" id="grupo-classe" style="display: none;">
+            <label for="classe-agente">FUNÇÃO / CLASSE DO AGENTE</label>
+            <input type="text" id="classe-agente" name="classe_agente" readonly placeholder="A classe aparecerá aqui">
+        </div>
+
+        <div class="field-group">
+            <label for="valor">VALOR DO PROJETO (R$)</label>
+            <input type="number" id="valor" name="valor" placeholder="Ex: 5000" min="0" step="0.01" required>
+        </div>
+
+        <div class="field-group">
+            <label for="pagamento">FORMA DE PAGAMENTO</label>
+            <select id="pagamento" name="pagamento" required>
+                <option value="" disabled selected>Selecione a forma</option>
+                <option value="pix">Á vista</option>
+                <option value="boleto">parcelas de 1-6 meses</option>
+                <option value="cartao">Parcelas de 6-12 meses</option>
+                <option value="transferencia">Parcelas de 12-60 meses</option>
+            </select>
+        </div>
+
+        <div class="field-group">
+            <label for="qtd_pessoas">QUANTIDADE DE INTEGRANTES</label>
+            <input type="number" id="qtd_pessoas" name="qtd_pessoas" min="1" max="10" value="1" required>
+        </div>
+
+        <div id="container-funcoes-membros"></div>
+
+        <div class="field-group">
+            <label for="date">VALIDADE DE OFERTA</label>
+            <input type="date" id="date" required>
+        </div>
+
+        <div class="field-group">
+            <label for="prazo">PRAZO DE ENTREGA (DIAS)</label>
+            <input type="number" id="prazo" name="prazo" placeholder="Ex: 30" required>
+        </div>
+
+        <a href="..//html/termos.html">
+            <div class="checkbox">
+                <input type="checkbox" id="termos" name="termos" required>
+                <label for="termos">Aceito os termos de envio de proposta intelectual</label>
+            </div>
+        </a>
+
+
+
+        <input type="submit" id="enviar" value="Enviar Projeto">
+    </form>
+
+    <script src="../Js/form-projeto.js"></script>
+</body>
+
+</html>
